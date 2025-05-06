@@ -1,0 +1,32 @@
+{
+  "name": "mern-stack-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cd client && npm install && npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js"
+  },
+  "dependencies": {
+    "array-flatten": "^3.0.0",
+    "axios": "^1.8.4",
+    "chalk": "^5.4.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2",
+    "nodemailer": "^6.10.0",
+    "react-calendar": "^5.1.0",
+    "react-router-dom": "^7.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.3"
+  }
+}
